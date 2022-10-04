@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="./styles/owl.carousel.min.css" media="all">
   <link rel="stylesheet" href="./styles/owl.theme.default.min.css" media="all">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
   <style>
     .btn-shake {
       /*animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;*/
@@ -239,6 +241,83 @@
     .bg-success .text-center {
       margin-bottom: 20px;
     }
+    .revamp-pg .admission .adm-process .admi-list {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.admission-icon {
+    margin-top: 16px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(https://www.simplilearn.com/ice9/assets/pg-page/pg-sprite.svgz) no-repeat;
+    background-position: -20px -172px;
+}
+.admi-list .col-md-4{
+  background-color: #e9e9e9;
+}
+.programme-features {
+    background-color: #00123d;
+    padding-top: 1px;
+}
+.programme-features-row > div .feature-wrapper {
+    background-color: #00123d;
+    padding: 20px 30px 20px 15px;
+    color: #ffffff;
+    width: 24%;
+}
+.feature-wrapper .head-text {
+    display: block;
+    font-size: 20px;
+    font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+    line-height: 26px;
+    padding-bottom: 8px;
+    letter-spacing: 0.36px;
+}
+.feature-wrapper .main-text {
+    display: block;
+    font-size: 18px;
+    font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
+    line-height: 28px;
+}
+.feature-wrapper .small-text {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.36px;
+    line-height: 1.3rem;
+}
+.programme-features-row > div .feature-wrapper-seperator {
+    width: 1%;
+}
+.programme-features-row > div .feature-wrapper-seperator span.seperator {
+    border-right: 1px solid #ffffff;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+}
+.container-fluid{
+  max-width: 1920px;
+}
+.media{
+  display: flex;
+  align-items: flex-start;
+}
+.feature-wrapper {
+    background-color: #00123d;
+    padding: 20px 30px 20px 15px;
+    color: #ffffff;
+    width: 24%;
+}
+.feature-wrapper-seperator span.seperator {
+    border-right: 1px solid #ffffff;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+}
   </style>
 
   <script>
@@ -385,7 +464,7 @@ Desktop View  </div>
               <use xlink:href="#icon-buy" fill="#fff" />
             </svg>Apply Now</a></p>
         <!-- <div class="d-flex justify-content-between pt-4">
-          <div class="h6"><strong>Hurry Up Before Offer Ends 😲</strong></div>
+          <div class="h6"><strong>Hurry Up Before Offer Ends </strong></div>
           <div class="textblue"> 75% </div>
         </div>
         <div class="progress mb-2">
@@ -490,58 +569,105 @@ Desktop View  </div>
   <!--end section-->
   <!-- How It Work End -->
 
-<!--application process start-->
-<div class="admission" id="admission_details">
   <div class="container">
-      <h2 data-test="adm-title"><b>Admission</b> Details</h2>
-      <div class="adm-process" data-test="adm-process">
-          <h3>Application Process</h3>
-          <p>The application process consists of three simple steps. An offer of admission
-              will be made to the selected candidates and accepted by the candidates by paying
-              the admission fee.</p>
-          <div class="admi-list lazy" data-test="adm-list">
-              <div class="col-md-4 lazy" data-test="adm-list-points"><span>STEP
-                      <!-- -->1
-                  </span>
-                  <div class="admission-icon lazy"></div>
-                  <h3>Submit Application</h3>
-                  <p>Tell us a bit about yourself and why you want to do this program</p>
-              </div>
-              <div class="col-md-4 lazy" data-test="adm-list-points"><span>STEP
-                      <!-- -->2
-                  </span>
-                  <div class="admission-icon lazy"></div>
-                  <h3>Application Review</h3>
-                  <p>An admission panel will shortlist candidates based on their application
-                  </p>
-              </div>
-              <div class="col-md-4 lazy" data-test="adm-list-points"><span>STEP
-                      <!-- -->3
-                  </span>
-                  <div class="admission-icon lazy"></div>
-                  <h3>Admission</h3>
-                  <p>Selected candidates can begin the program within 1-2 weeks</p>
-              </div>
-          </div>
+    <div class="row admi-list" data-test="adm-list">
+      <div class="col-md-4" data-test="adm-list-points"><span>STEP 1
+        </span>
+        <div class="admission-icon"></div>
+        <h3>Submit Application</h3>
+        <p>Tell us a bit about yourself and why you want to do this program</p>
       </div>
-  </div>
-  <div class="eligi-candidate" data-test="eligi-candidate">
-      <div class="container">
-          <h3>Eligibility Criteria</h3>
-          <p>For admission to this Digital Marketing program, candidates should have:</p>
-          <div class="card-wrap">
-              <div class="eligibility-card"><span class="lazy">Atleast 2 years of work
-                      experience</span></div>
-              <div class="eligibility-card"><span class="lazy">A bachelor&#x27;s degree in any
-                      discipline</span></div>
-              <div class="eligibility-card"><span class="lazy">A digital marketing background
-                      is desirable but not required</span></div>
-          </div>
+      <div class="col-md-4" data-test="adm-list-points"><span>STEP 2
+        </span>
+        <div class="admission-icon"></div>
+        <h3>Application Review</h3>
+        <p>An admission panel will shortlist candidates based on their application</p>
       </div>
+      <div class="col-md-4" data-test="adm-list-points"><span>STEP 3
+        </span>
+        <div class="admission-icon"></div>
+        <h3>Admission</h3>
+        <p>Selected candidates can begin the program within 1-2 weeks</p>
+      </div>
+    </div>
   </div>
-</div>
-<!-- application process end  -->
+  <div class="container">
+  <section class="programme-features">
+    <div class="container-fluid">
+        <div class="row programme-features-row">
+            <div class="col d-flex flex-wrap">
+                <div class="feature-wrapper no-pl-0">
+                    <div class="media">
+                        <img src="https://online-er.isb.edu/digital-marketing-and-analytics/images/start-icon.png" class="mr-3" alt="">
+                        <div class="media-body">
+                            <span class="head-text">STARTS ON</span>
+                            <span class="main-text">September 30, 2022</span>
+                            <!-- <span class="head-text pt-3">APPLICATION DEADLINE</span>
+                            <span class="main-text">March 8, 2022</span> -->
+                            <span class="small-text mt-2"><em>Application Deadline: October 04, 2022</em></span>
   
+                        </div>
+                    </div>
+                </div><!-- end of wrapper -->
+  
+                
+  
+                <div class="feature-wrapper">
+                    <div class="media">
+                        <img src="https://online-er.isb.edu/digital-marketing-and-analytics/images/duration-icon.png" class="mr-3" alt="">
+                        <div class="media-body">
+                            <span class="head-text">DURATION</span>
+                            <span class="main-text">12 Weeks</span>
+                            <span class="main-text">Online</span>
+                            <span class="small-text">(4-6 hours/ week)</span>
+  
+  
+  
+                        </div>
+                    </div>
+  
+                </div><!-- end of wrapper -->
+  
+                
+  
+                <div class="feature-wrapper no-pl-0">
+                    <div class="media">
+                        <img src="https://online-er.isb.edu/digital-marketing-and-analytics/images/fee-icon.png" class="mr-3" alt="">
+                        <div class="media-body">
+                            <span class="head-text">PROGRAMME FEE</span>
+                            <span class="main-text d-block">INR 1,05,000 + GST</span>
+                            <!-- <span class="main-text d-block strikeout">INR 1,00,000 + GST</span>
+                            <span class="main-text d-block">INR 92,000 + GST <small class="d-block">(Valid till June 7, 2022 only)</small></span> -->
+                            <span class="small-text"><a href="#" onclick="trackEvent('click','DMA LP','Pop Up','Payment Plan');" data-toggle="modal" data-target="#myModal">View Payment Plan</a></span>
+                            <span class="small-text mt-2"><i class="fa fa-info-circle"></i><a href="#" onclick="trackEvent('click','DMA LP','Pop Up','Loan Offered');" data-toggle="modal" data-target="#myModal3">Loan offered at EMI of INR 5,885</a></span>
+                            <span class="small-text mt-2"><i class="fa fa-info-circle"></i><a href="#" onclick="trackEvent('click','DMA LP','Pop Up','Special Corporate Enrolment');" data-toggle="modal" data-target="#myModal2">Special Corporate Enrolment Pricing</a></span>
+  
+                        </div>
+                    </div>
+  
+                </div><!-- end of wrapper -->
+  
+                
+  
+                <div class="feature-wrapper experience-box">
+                    <div class="media">
+                        <img src="https://online-er.isb.edu/digital-marketing-and-analytics/images/eligiblity-icon.png" class="mr-3" alt="">
+                        <div class="media-body">
+                            <span class="head-text">ELIGIBILITY</span>
+                            <span class="experience-text">Any Graduate/ Diploma holder</span>
+            
+  
+                        </div>
+                    </div>
+  
+                </div><!-- end of wrapper -->
+  
+  
+            </div><!-- end of col -->
+        </div><!-- end of row -->
+    </div><!-- end of cont -->
+  </section>
+</div>
   <!-- 1-oct-addition  end-->
 
   <div class="bg-light">
@@ -1609,6 +1735,8 @@ Desktop View  </div>
       </div>
     </div>
   </div>
+
+
 
   <!-- <script>
     var countDownDate = new Date("August 31, 2022 00:00:00").getTime(); var x = setInterval(function () { var now = new Date().getTime(); var distance = countDownDate - now; var days = Math.floor(distance / (1000 * 60 * 60 * 24)); var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); var seconds = Math.floor((distance % (1000 * 60)) / 1000); document.getElementById("countDown").innerHTML = "<span>" + days + "<br><small>Days </small></span><span>" + hours + "<br><small>Hours</small></span><span>" + minutes + "<br><small>Min </small></span><span>" + seconds + "<br><small>Sec</small></span>"; if (distance < 0) { clearInterval(x); document.getElementById("countDown").innerHTML = "BROFF20"; } }, 1000);

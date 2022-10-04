@@ -2414,6 +2414,7 @@ progress {
 		display: block;
 		margin-left: auto;
 		margin-right: auto
+		
 	}
 }
 
@@ -11850,7 +11851,7 @@ a.remove-anim::after {
 }
 
 .admission .adm-process .admi-list {
-	margin-top: 8px
+	margin-top: 0px
 }
 
 .admission .adm-process .col-md-4 {
@@ -18837,4 +18838,7 @@ div.ebook-modal a.close {
 	.new-thanks .query_thanks .refer-data .blue-button {
 		font-size: 16px
 	}
+}
+.adm-card {
+	background-color: #00123d;
 }
